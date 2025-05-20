@@ -6,7 +6,7 @@ namespace Barbearia.API.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class FaturamentoController(IFaturaService service) : ControllerBase
+public class FaturaController(IFaturaService service) : ControllerBase
 {
     private readonly IFaturaService _service = service;
 

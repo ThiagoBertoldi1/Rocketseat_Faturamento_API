@@ -12,7 +12,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
     public async Task<List<Fatura>> GetAll(CancellationToken cancellationToken)
     {
-        var sql = "SELECT * FROM Faturas";
+        var sql = "SELECT * FROM Fatura";
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
@@ -21,7 +21,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
     public async Task<Fatura?> GetById(long id, CancellationToken cancellationToken)
     {
-        var sql = "SELECT * FROM Faturas WHERE Id = @Id";
+        var sql = "SELECT * FROM Fatura WHERE Id = @Id";
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
@@ -42,7 +42,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
     public async Task<bool> Update(Fatura fatura, CancellationToken cancellationToken)
     {
         var sql = @"
-            UPDATE Faturas
+            UPDATE Fatura
             SET IdProduto = @IdProduto,
                 Descricao = @Descricao,
                 DtInclusao = @DtInclusao,
@@ -56,7 +56,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
     public async Task<bool> Delete(long id, CancellationToken cancellationToken)
     {
-        var sql = "DELETE FROM Faturas WHERE Id = @Id";
+        var sql = "DELETE FROM Fatura WHERE Id = @Id";
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
