@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Faturamento.Data\Faturamento.Data.csproj" />
-    <ProjectReference Include="..\Faturamento.Domain\Faturamento.Domain.csproj" />
-    <ProjectReference Include="..\Faturamento.Exception\Faturamento.Exceptions.csproj" />
-    <ProjectReference Include="..\Faturamento.Infra\Faturamento.Infra.csproj" />
+    <ProjectReference Include="..\Faturamento.Data\Barbearia.Data.csproj" />
+    <ProjectReference Include="..\Faturamento.Domain\Barbearia.Domain.csproj" />
+    <ProjectReference Include="..\Faturamento.Exception\Barbearia.Exceptions.csproj" />
+    <ProjectReference Include="..\Faturamento.Infra\Barbearia.Infra.csproj" />
   </ItemGroup>
 
 </Project>

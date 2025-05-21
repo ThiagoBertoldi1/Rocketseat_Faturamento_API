@@ -1,6 +1,6 @@
-﻿using Faturamento.Domain.Entity;
+﻿using Barbearia.Domain.Entity;
 
-namespace Faturamento.Domain.Interfaces.ServicesInterfaces;
+namespace Barbearia.Domain.Interfaces.ServicesInterfaces;
 
 public interface IFaturaService
 {

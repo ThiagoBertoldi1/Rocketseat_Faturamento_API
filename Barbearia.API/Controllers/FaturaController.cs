@@ -1,5 +1,5 @@
-﻿using Faturamento.Domain.Entity;
-using Faturamento.Domain.Interfaces.ServicesInterfaces;
+﻿using Barbearia.Domain.Entity;
+using Barbearia.Domain.Interfaces.ServicesInterfaces;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Barbearia.API.Controllers;

@@ -1,8 +1,8 @@
-﻿using Faturamento.Domain.Entity;
-using Faturamento.Domain.Interfaces.RepositoriesInterfaces;
-using Faturamento.Domain.Interfaces.ServicesInterfaces;
+﻿using Barbearia.Domain.Entity;
+using Barbearia.Domain.Interfaces.RepositoriesInterfaces;
+using Barbearia.Domain.Interfaces.ServicesInterfaces;
 
-namespace Faturamento.Domain.Services;
+namespace Barbearia.Domain.Services;
 public class FaturaService(IFaturaRepository faturaRepository) : IFaturaService
 {
     private readonly IFaturaRepository _faturaRepository = faturaRepository;

@@ -1,10 +1,10 @@
-﻿using Dapper;
-using Faturamento.Domain.Entity;
-using Faturamento.Domain.Interfaces.RepositoriesInterfaces;
+﻿using Barbearia.Domain.Entity;
+using Barbearia.Domain.Interfaces.RepositoriesInterfaces;
+using Dapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
 
-namespace Faturamento.Data.Repository;
+namespace Barbearia.Data.Repository;
 
 public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 {
@@ -36,7 +36,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
-        return (await connection.ExecuteAsync(sql, fatura)) > 0;
+        return await connection.ExecuteAsync(sql, fatura) > 0;
     }
 
     public async Task<bool> Update(Fatura fatura, CancellationToken cancellationToken)
@@ -51,7 +51,7 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
-        return (await connection.ExecuteAsync(sql, fatura)) > 0;
+        return await connection.ExecuteAsync(sql, fatura) > 0;
     }
 
     public async Task<bool> Delete(long id, CancellationToken cancellationToken)
@@ -60,6 +60,6 @@ public class FaturaRepository(IConfiguration configuration) : IFaturaRepository
 
         using var connection = new SqlConnection(_connString);
         connection.Open();
-        return (await connection.ExecuteAsync(sql, new { Id = id })) > 0;
+        return await connection.ExecuteAsync(sql, new { Id = id }) > 0;
     }
 }

@@ -1,7 +1,7 @@
-﻿using Faturamento.Data.Repository;
-using Faturamento.Domain.Interfaces.RepositoriesInterfaces;
-using Faturamento.Domain.Interfaces.ServicesInterfaces;
-using Faturamento.Domain.Services;
+﻿using Barbearia.Data.Repository;
+using Barbearia.Domain.Interfaces.RepositoriesInterfaces;
+using Barbearia.Domain.Interfaces.ServicesInterfaces;
+using Barbearia.Domain.Services;
 
 namespace Barbearia.API.DI;
 

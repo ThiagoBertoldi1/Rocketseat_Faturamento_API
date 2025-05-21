@@ -1,4 +1,4 @@
-﻿namespace Faturamento.Domain.Enums;
+﻿namespace Barbearia.Domain.Enums;
 
 public enum MetodoPagamento
 {

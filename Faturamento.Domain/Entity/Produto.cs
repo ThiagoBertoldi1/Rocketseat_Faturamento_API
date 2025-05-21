@@ -1,4 +1,4 @@
-﻿namespace Faturamento.Domain.Entity;
+﻿namespace Barbearia.Domain.Entity;
 
 public class Produto
 {

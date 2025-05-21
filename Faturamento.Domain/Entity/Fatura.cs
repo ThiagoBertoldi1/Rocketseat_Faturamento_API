@@ -1,6 +1,6 @@
-﻿using Faturamento.Domain.Enums;
+﻿using Barbearia.Domain.Enums;
 
-namespace Faturamento.Domain.Entity;
+namespace Barbearia.Domain.Entity;
 
 public class Fatura
 {
